@@ -1090,7 +1090,7 @@ elif page == "📛 Named Entity Recognition":
         st.markdown("""
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:1rem;">
             <span class="ner-entity ner-brand">🏭 BRAND</span>
-            <span class="ner-entity ner-product">🚙 PRODUCT</span>
+            <span class="ner-entity ner-product">👕 PRODUCT</span>
             <span class="ner-entity ner-location">📍 LOCATION</span>
             <span class="ner-entity ner-aspect">🏷️ ASPECT</span>
         </div>
@@ -1098,7 +1098,7 @@ elif page == "📛 Named Entity Recognition":
 
         ner_input = st.text_area(
             "Masukkan teks review:",
-            value="Saya pakai Toyota Avanza di Jakarta, mesin nya bandel dan irit bensin. Servis di bengkel resmi juga murah.",
+            value="Saya beli kemeja di toko Zano cabang Jakarta, bahannya bagus dan jahitan rapi. Pramuniaganya juga ramah walau harganya mahal.",
             height=120,
             key="ner_input"
         )
@@ -1131,12 +1131,12 @@ elif page == "📛 Named Entity Recognition":
 
         try:
             train_df, _, _ = load_data()
-            sample_reviews = train_df['sentence'].sample(5, random_state=42).tolist()
+            sample_reviews = train_df['text'].sample(5, random_state=42).tolist()
         except Exception:
             sample_reviews = [
-                "Toyota Avanza irit banget bensin nya",
-                "Honda Brio mesin nya halus dan bagus",
-                "Servis di bengkel Daihatsu Sukabumi bagus",
+                "Baju nya bagus banget, jahitan rapi dan bahan kain lembut",
+                "Kemeja Erigo nyaman dipakai walau harga nya agak mahal",
+                "Pelayanan kasir di mall Jakarta ramah dan diskon nya gede",
             ]
 
         for review in sample_reviews:
