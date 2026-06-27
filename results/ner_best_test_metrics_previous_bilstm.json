@@ -1,0 +1,5 @@
+{
+  "micro_f1_non_o": 0.4445,
+  "macro_f1_non_o": 0.1466,
+  "model": "BiLSTM token classification (previous)"
+}

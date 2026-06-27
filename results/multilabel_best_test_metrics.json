@@ -1,9 +1,24 @@
 {
-  "model": "BOW_1-2gram_ClassifierChain_LogReg_C0.5",
+  "model": "BOW_1-2gram_ClassifierChain_LogReg_C0.5_ThresholdTuned",
   "split": "test",
-  "micro_f1": 0.7937915742793792,
-  "macro_f1": 0.5093580854408165,
-  "weighted_f1": 0.812243494936954,
-  "hamming_loss": 0.04691046658259773,
-  "subset_accuracy": 0.6327868852459017
+  "micro_f1": 0.656093489148581,
+  "macro_f1": 0.43471157384255243,
+  "weighted_f1": 0.8246972607721028,
+  "hamming_loss": 0.10390920554854981,
+  "subset_accuracy": 0.19672131147540983,
+  "thresholds": [
+    0.4,
+    0.4,
+    0.25,
+    0.5,
+    0.5,
+    0.3,
+    0.55,
+    0.5,
+    0.45,
+    0.4,
+    0.5,
+    0.5,
+    0.4
+  ]
 }
