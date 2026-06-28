@@ -1388,14 +1388,6 @@ elif page == "🚀 Demo Prediksi":
             base_path = os.path.join(os.path.dirname(__file__), 'models')
             data = joblib.load(os.path.join(base_path, 'Kelp2_best_multilabel_model.joblib'))
             pipeline = data.get('pipeline') or data.get('model') or data
-            raw_thresholds = data.get('thresholds', {})
-            # Normalize: if thresholds is a list, convert to dict using target_cols
-            if isinstance(raw_thresholds, (list, np.ndarray)) and target_cols:
-                thresholds = {col: float(t) for col, t in zip(target_cols, raw_thresholds)}
-            elif isinstance(raw_thresholds, dict):
-                thresholds = raw_thresholds
-            else:
-                thresholds = {}
             target_cols = data.get('target_cols') or data.get('labels') or []
             score_type = data.get('score_type', 'predict_proba') if isinstance(data, dict) else 'predict_proba'
             if not target_cols:
@@ -1404,6 +1396,14 @@ elif page == "🚀 Demo Prediksi":
                     for s in SENTIMENT_LABELS:
                         col = f"{a}_{s}"
                         target_cols.append(col)
+            raw_thresholds = data.get('thresholds', {})
+            # Normalize: if thresholds is a list, convert to dict using target_cols
+            if isinstance(raw_thresholds, (list, np.ndarray)) and target_cols:
+                thresholds = {col: float(t) for col, t in zip(target_cols, raw_thresholds)}
+            elif isinstance(raw_thresholds, dict):
+                thresholds = raw_thresholds
+            else:
+                thresholds = {}
             return pipeline, thresholds, target_cols, score_type
         except Exception as e:
             return None, {}, [], 'predict_proba'
