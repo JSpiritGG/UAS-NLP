@@ -1,13 +1,3 @@
-"""
-==========================================================================
-  ABSA dari Review Google Places:
-  Multilabel Text Classification & Named Entity Recognition (NER)
-==========================================================================
-  Streamlit Application
-  Mata Kuliah: Pemrosesan Bahasa Alami - UAS
-==========================================================================
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
