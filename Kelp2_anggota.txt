@@ -1,0 +1,14 @@
+Michael Ardiyanto		(230712327)
+Naomi Nadya Kinasih		(230712412)
+Jovita Maria Erdinasari Hartana	(230712428)
+
+Streamlit 
+https://uts-nlp-fhvxmig877kerwi2zbhafj.streamlit.app/
+
+Link repository
+https://github.com/Jovita14/UTS-NLP
+
+UAS PBA ABSA Multilabel & NER
+Repository UAS: [isi link repository UAS setelah upload]
+Deployment Streamlit UAS: [isi link deployment Streamlit UAS setelah deploy]
+Video demo UAS: [isi link video demo setelah dibuat]

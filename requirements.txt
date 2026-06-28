@@ -3,17 +3,9 @@ numpy
 scikit-learn
 joblib
 matplotlib
-seaborn
 torch
-scikit-multilearn-ng
-scipy
 streamlit
 openpyxl
 python-docx
 reportlab
 nbformat
-plotly
-wordcloud
-pillow
-nltk
-Sastrawi
