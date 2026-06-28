@@ -1405,15 +1405,13 @@ elif page == "🚀 Demo Prediksi":
                 predictions = {}
                 for idx, col in enumerate(target_cols):
                     if y_pred[idx] == 1:
-                        aspect, sentiment = col.split('_')
+                        aspect, sentiment = col.split('_', 1)
                         if aspect not in predictions:
                             predictions[aspect] = []
                         predictions[aspect].append(sentiment.lower())
 
-                # NER
                 entities = extract_entities(text_to_analyze)
 
-            # ─── Map NER entities to aspects ───
             ASPECT_ENTITY_MAP = {
                 'PRODUCT': {'PRODUCT', 'BRAND'},
                 'PRICE': set(),
