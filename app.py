@@ -260,10 +260,10 @@ ASPECT_DESCRIPTIONS = {
 }
 
 ASPECT_COLORS = {
-    'PRODUCT': '#4facfe',
-    'PRICE': '#a18cd1',
-    'PLACE': '#43e97b',
-    'PROMOTION': '#fa709a'
+    'PRODUCT': '#1e40af',
+    'PRICE': '#1e40af',
+    'PLACE': '#1e40af',
+    'PROMOTION': '#1e40af'
 }
 
 # ─────────────────── NER Logic ───────────────────
