@@ -9,6 +9,6 @@ Link repository
 https://github.com/Jovita14/UTS-NLP
 
 UAS PBA ABSA Multilabel & NER
-Repository UAS: [isi link repository UAS setelah upload]
-Deployment Streamlit UAS: [isi link deployment Streamlit UAS setelah deploy]
-Video demo UAS: [isi link video demo setelah dibuat]
+Repository UAS: [https://github.com/JSpiritGG/UAS-NLP]
+Deployment Streamlit UAS: [https://uas-nlp-juycvvkc8ehsu6syvcxjk9.streamlit.app/]
+Video demo UAS: [https://drive.google.com/drive/folders/1uAi5S8lUEJFjD6v--6k2Zp_O2oub7AGz?usp=sharing]
